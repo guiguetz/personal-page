@@ -27,6 +27,13 @@ export default function App({ Component, pageProps, router }) {
         />
       </Head>
       <div className="site-layout">
+        <div className="logo-container">
+          <h1>{'<GuilhermeAguiar/>'}</h1>
+        </div>
+        <div className="opts-container">
+          <button>🌞</button>
+          <button>🌎</button>
+        </div>
         <nav className="navbar">
           <ul>
             <motion.li whileHover={{ scale: 1.5 }}>
@@ -54,6 +61,13 @@ export default function App({ Component, pageProps, router }) {
               <Link href="/lab">
                 <span className={router.pathname === '/lab' ? 'active' : ''}>
                   Lab
+                </span>
+              </Link>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.5 }}>
+              <Link href="/uses">
+                <span className={router.pathname === '/uses' ? 'active' : ''}>
+                  Uses
                 </span>
               </Link>
             </motion.li>
