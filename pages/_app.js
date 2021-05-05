@@ -20,19 +20,39 @@ export default function App({ Component, pageProps, router }) {
       <nav className="navbar">
         <ul>
           <motion.li whileHover={{ scale: 1.5 }}>
-            <Link href="/">Início</Link>
+            <Link href="/">
+              <span className={router.path === '/' ? 'active' : ''}>
+                Início
+              </span>
+            </Link>
           </motion.li>
           <motion.li whileHover={{ scale: 1.5 }}>
-            <Link href="/about">Sobre</Link>
+            <Link href="/about">
+              <span className={router.path === '/about' ? 'active' : ''}>
+                Sobre
+              </span>
+            </Link>
           </motion.li>
           <motion.li whileHover={{ scale: 1.5 }}>
-            <Link href="/skills">Habilidades</Link>
+            <Link href="/skills">
+              <span className={router.path === '/skills' ? 'active' : ''}>
+                Habilidades
+              </span>
+            </Link>
           </motion.li>
           <motion.li whileHover={{ scale: 1.5 }}>
-            <Link href="/lab">Lab</Link>
+            <Link href="/lab">
+              <span className={router.path === '/lab' ? 'active' : ''}>
+                Lab
+              </span>
+            </Link>
           </motion.li>
           <motion.li whileHover={{ scale: 1.5 }}>
-            <Link href="/blog">Blog</Link>
+            <Link href="/blog">
+              <span className={router.path === '/blog' ? 'active' : ''}>
+                Blog
+              </span>
+            </Link>
           </motion.li>
         </ul>
       </nav>

@@ -38,6 +38,13 @@ body {
       justify-content: space-between;
       align-items: center;
       li {
+        & span.active {
+          text-decoration: underline;
+          -webkit-text-decoration-color: salmon;
+          text-decoration-color: salmon;
+          -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+        }
         & * {
           color: black;
         }
@@ -61,7 +68,7 @@ body {
       h2 {
         font-size: 0.8em;
       }
-      
+
       p {
         margin: 10px 0;
         line-height: 1.6;
