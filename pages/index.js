@@ -32,7 +32,7 @@ const Home = () => {
         animate="show"
       >
         <motion.h1 variants={item}>
-          Olá! Eu sou <strong>Guilherme Aguiar</strong>!
+          Olá! Eu sou <strong className="active">Guilherme Aguiar</strong>!
         </motion.h1>
         <motion.h1 variants={item}>
           Sou desenvolvedor front end, jardineiro amador e entusiasta de novas
@@ -40,7 +40,7 @@ const Home = () => {
         </motion.h1>
         <motion.h1 variants={item}>
           Atualmente, estou criando soluções criativas na{' '}
-          <strong>ModalGR</strong>.
+          <strong className="active">ModalGR</strong>.
         </motion.h1>
       </motion.section>
     </>

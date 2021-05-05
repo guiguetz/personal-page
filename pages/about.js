@@ -30,7 +30,9 @@ const About = () => {
       initial="hidden"
       animate="show"
     >
-      <motion.h1 variants={item}>Sobre mim</motion.h1>
+      <motion.h1 className="active" variants={item}>
+        Sobre mim
+      </motion.h1>
       <motion.h2 variants={item}>(Uma biografia não autorizada!)</motion.h2>
 
       <motion.p variants={item}>

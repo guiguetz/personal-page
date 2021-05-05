@@ -36,8 +36,8 @@ export default class Blog extends Component {
           <motion.h1 variants={item}>{title}</motion.h1>
           <HomeContent />
           <motion.ul variants={container} initial="hidden" animate="show">
-            {cats.map((cat) => (
-              <motion.li variants={item}>
+            {cats.map((cat, k) => (
+              <motion.li key={k} variants={item}>
                 <h2>{cat.name}</h2>
                 <p>{cat.description}</p>
               </motion.li>
