@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: guiguetz/personal-page
-  branch: master
+  branch: main
 media_folder: public/img
 public_folder: img
 collections:
