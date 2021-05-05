@@ -1,0 +1,9 @@
+.navbar {
+    height: var(--nav-height);
+    background-color: blue;
+
+    & > * {
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -1,0 +1,12 @@
+.page-container {
+    width: 80vw;
+    height: calc(100% - var(--nav-height));
+    margin: 0 auto;
+    background-color: red;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
